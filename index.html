@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+  <script src="src/images-grid.js"></script>
+  <link rel="stylesheet" href="src/images-grid.css">
+</head>
+
+<body>
+  <form name="adidas_sku" onsubmit="return submit_sku()" action="">
+    <input id="input_sku" type="text" maxlength="6" pattern="[A-Za-z0-9]{6}" required></input>
+    <input type="submit" value="Search for SKU" id="button_submit" />
+    <label id="label_status">Status: WAITING FOR INPUT.</label>
+  </form>
+
+  <div id="imgs"></div>
+</body>
+
+</html>
