@@ -27,14 +27,18 @@ $(document)
     });
 
 var img_extensions = [
+    "_00_plp_standard.jpg",
+    "_000_plp_model.jpg",
     "_01_standard.jpg",
     "_02_standard.jpg",
+    "_02_hover_frv.jpg",
     "_03_standard.jpg",
     "_04_standard.jpg",
     "_05_standard.jpg",
     "_06_standard.jpg",
     "_07_standard.jpg",
-    "_08_hover_frv.jpg",
+    "_08_hover_frv.jpg",    
+    "_21_model.jpg",
     "_41_detail.jpg",
     "_42_detail.jpg",
     "_43_detail.jpg"
