@@ -54,24 +54,7 @@ $("#button_submit")[0].setAttribute("disabled", true);
 
 var sku = $("#input_sku")[0].value.toUpperCase();
 
-$.ajax({
-    dataType: "json",
-    url: "https://www.adidas.dk/api/products/" + sku,
-    success: function(data) {
-    $("#label_status")[0].innerText = "Status: SKU FOUND. FETCHING IMAGES...";
-    console.log(data["id"]);
-    fetch_images(sku)
-    },
-    error: function(data, textstatus) {
-    if ($.parseJSON(data.responseText)["message"] == "Product redirect") {
-        $("#label_status")[0].innerText = "Status: SKU FOUND. ATTEMPTING TO FETCH PRODUCT IMAGES...";
-        fetch_images(sku)
-    } else {
-        $("#label_status")[0].innerText = "Status: SKU NOT FOUND. WAITING FOR INPUT.";
-        $("#button_submit")[0].removeAttribute("disabled");
-    }
-    }
-});
+fetch_images(sku)
 
 return false;
 }
